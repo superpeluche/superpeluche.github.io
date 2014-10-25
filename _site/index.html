@@ -1,8 +1,67 @@
----
-layout: default
----
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 
-<!-- INTRO SECTION STARTS HERE -->
+  <head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Your awesome title</title>
+	<meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="stylesheet" href="/css/main.css">
+	<link rel="canonical" href="http://yourdomain.com/">
+	<script src="/js/vendor/modernizr-2.6.2.min.js"></script>
+</head>
+
+  <body>
+
+    <!-- HEADER SECTION STARTS HERE -->
+<header class="main-header">
+
+  <div class="content">
+
+    <div class="logo">
+      <a href="">Panda<span>Box</span></a>
+    </div>
+
+    <nav class="main-nav">
+
+      <a href="#intro">Accueil</a>
+      <a href="#agency">L'Agence</a>
+      <a href="#services">Services</a>
+      <a href="#creations">Creations</a>
+      <a href="#contact">Contact</a>
+
+    </nav>
+
+    <button class="menu-toggle">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M462 163.5H50v-65h412v65zm0 60H50v65h412v-65zm0 125H50v65h412v-65z"/></svg>
+    </button>
+
+  </div>
+
+</header>
+<!-- HEADER SECTION STARTS HERE -->
+
+
+<!-- mobile menu starts here -->
+<nav class="mobile-nav">
+
+  <a href="#intro">Accueil</a>
+  <a href="#agency">L'Agence</a>
+  <a href="#services">Services</a>
+  <a href="#creations">Creations</a>
+  <a href="#contact">Contacts</a>
+
+</nav>
+<!-- mobile menu ends here -->
+    
+        <!-- INTRO SECTION STARTS HERE -->
 <section class="intro" id='intro'>
    <div class="content">
       <h2>Bienvenue chez Pandabox</h2>
@@ -143,7 +202,7 @@ layout: default
 
       <div class="work">
          <figure>
-            <img src="img/portfolio_04.jpg" alt="{{}}">
+            <img src="img/portfolio_04.jpg" alt="">
             <figcaption>
               site.title   <h4>Projet Numéro</h4>
                <a href='#'>Voir le projet</a>
@@ -161,7 +220,7 @@ layout: default
 
                <a href="#">Voir le site</a>
 
-               <img class='site-preview' src="img/screenshot.png" alt="{{ site.title }}">
+               <img class='site-preview' src="img/screenshot.png" alt="Your awesome title">
             </div>
 
          </div>
@@ -171,7 +230,7 @@ layout: default
 
       <div class="work">
          <figure>
-            <img src="img/portfolio_02.jpg" alt="{{}}">
+            <img src="img/portfolio_02.jpg" alt="">
             <figcaption>
               site.title   <h4>Projet Numéro</h4>
                <a href='#'>Voir le projet</a>
@@ -189,7 +248,7 @@ layout: default
 
                <a href="#">Voir le site</a>
 
-               <img class='site-preview' src="img/screenshot.png" alt="{{ site.title }}">
+               <img class='site-preview' src="img/screenshot.png" alt="Your awesome title">
             </div>
 
          </div>
@@ -198,7 +257,7 @@ layout: default
 
       <div class="work">
          <figure>
-            <img src="img/portfolio_09.jpg" alt="{{}}">
+            <img src="img/portfolio_09.jpg" alt="">
             <figcaption>
               site.title   <h4>Projet Numéro</h4>
                <a href='#'>Voir le projet</a>
@@ -216,35 +275,7 @@ layout: default
 
                <a href="#">Voir le site</a>
 
-               <img class='site-preview' src="img/screenshot.png" alt="{{ site.title }}">
-            </div>
-
-         </div>
-
-
-      </div>
-
-      <div class="work">
-         <figure>
-            <img src="img/portfolio_07.jpg" alt="{{}}">
-            <figcaption>
-              site.title   <h4>Projet Numéro</h4>
-               <a href='#'>Voir le projet</a>
-            </figcaption>
-         </figure>
-
-         <div class="project-overlay-test">
-            <button class="close-project">
-               <svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512"><path d="M462 256c0 113.77-92.23 206-206 206S50 369.77 50 256 142.23 50 256 50s206 92.23 206 206zm-40 0c0-91.755-74.258-166-166-166-91.755 0-166 74.26-166 166 0 91.755 74.258 166 166 166 91.755 0 166-74.26 166-166zm-96.67 106.49L258 295.166l-67.33 67.332-36.163-36.186 67.313-67.322-67.32-67.317 36.184-36.164 67.31 67.3 67.3-67.31 36.193 36.17-67.312 67.316 67.32 67.31-36.17 36.194z"/></svg>
-            </button>
-
-            <div class="content">
-               <h2>Project Name</h2>
-               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa dolores, porro unde enim facilis illum dolor totam deserunt tempora ipsam voluptatum, inventore quos! Harum perspiciatis sit nam debitis nostrum dolores molestias. Unde inventore dolores harum!</p>
-
-               <a href="#">Voir le site</a>
-
-               <img class='site-preview' src="img/screenshot.png" alt="{{ site.title }}">
+               <img class='site-preview' src="img/screenshot.png" alt="Your awesome title">
             </div>
 
          </div>
@@ -254,7 +285,7 @@ layout: default
 
       <div class="work">
          <figure>
-            <img src="img/portfolio_08.jpg" alt="{{}}">
+            <img src="img/portfolio_07.jpg" alt="">
             <figcaption>
               site.title   <h4>Projet Numéro</h4>
                <a href='#'>Voir le projet</a>
@@ -272,7 +303,7 @@ layout: default
 
                <a href="#">Voir le site</a>
 
-               <img class='site-preview' src="img/screenshot.png" alt="{{ site.title }}">
+               <img class='site-preview' src="img/screenshot.png" alt="Your awesome title">
             </div>
 
          </div>
@@ -282,7 +313,7 @@ layout: default
 
       <div class="work">
          <figure>
-            <img src="img/portfolio_06.jpg" alt="{{}}">
+            <img src="img/portfolio_08.jpg" alt="">
             <figcaption>
               site.title   <h4>Projet Numéro</h4>
                <a href='#'>Voir le projet</a>
@@ -300,7 +331,7 @@ layout: default
 
                <a href="#">Voir le site</a>
 
-               <img class='site-preview' src="img/screenshot.png" alt="{{ site.title }}">
+               <img class='site-preview' src="img/screenshot.png" alt="Your awesome title">
             </div>
 
          </div>
@@ -310,7 +341,7 @@ layout: default
 
       <div class="work">
          <figure>
-            <img src="img/portfolio_05.jpg" alt="{{}}">
+            <img src="img/portfolio_06.jpg" alt="">
             <figcaption>
               site.title   <h4>Projet Numéro</h4>
                <a href='#'>Voir le projet</a>
@@ -328,7 +359,7 @@ layout: default
 
                <a href="#">Voir le site</a>
 
-               <img class='site-preview' src="img/screenshot.png" alt="{{ site.title }}">
+               <img class='site-preview' src="img/screenshot.png" alt="Your awesome title">
             </div>
 
          </div>
@@ -338,7 +369,35 @@ layout: default
 
       <div class="work">
          <figure>
-            <img src="img/portfolio_03.jpg" alt="{{}}">
+            <img src="img/portfolio_05.jpg" alt="">
+            <figcaption>
+              site.title   <h4>Projet Numéro</h4>
+               <a href='#'>Voir le projet</a>
+            </figcaption>
+         </figure>
+
+         <div class="project-overlay-test">
+            <button class="close-project">
+               <svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512"><path d="M462 256c0 113.77-92.23 206-206 206S50 369.77 50 256 142.23 50 256 50s206 92.23 206 206zm-40 0c0-91.755-74.258-166-166-166-91.755 0-166 74.26-166 166 0 91.755 74.258 166 166 166 91.755 0 166-74.26 166-166zm-96.67 106.49L258 295.166l-67.33 67.332-36.163-36.186 67.313-67.322-67.32-67.317 36.184-36.164 67.31 67.3 67.3-67.31 36.193 36.17-67.312 67.316 67.32 67.31-36.17 36.194z"/></svg>
+            </button>
+
+            <div class="content">
+               <h2>Project Name</h2>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa dolores, porro unde enim facilis illum dolor totam deserunt tempora ipsam voluptatum, inventore quos! Harum perspiciatis sit nam debitis nostrum dolores molestias. Unde inventore dolores harum!</p>
+
+               <a href="#">Voir le site</a>
+
+               <img class='site-preview' src="img/screenshot.png" alt="Your awesome title">
+            </div>
+
+         </div>
+
+
+      </div>
+
+      <div class="work">
+         <figure>
+            <img src="img/portfolio_03.jpg" alt="">
             <figcaption>
               site.title   <h4>Projet Numéro</h4>
                <a href='#'>Voir le projet</a>
@@ -358,7 +417,7 @@ layout: default
 
                <a href="#">Voir le site</a>
 
-               <img class='site-preview' src="img/screenshot.png" alt="{{ site.title }}">
+               <img class='site-preview' src="img/screenshot.png" alt="Your awesome title">
 
             </div>
 
@@ -383,7 +442,7 @@ layout: default
       <div class="team-member">
 
          <figure>
-            <img src="img/team01.jpg" alt="{{ site.title }}">
+            <img src="img/team01.jpg" alt="Your awesome title">
          </figure>
 
          <h4>Frank Lampard</h4>
@@ -406,7 +465,7 @@ layout: default
       <div class="team-member">
 
          <figure>
-            <img src="img/team02.jpg" alt="{{ site.title }}">
+            <img src="img/team02.jpg" alt="Your awesome title">
          </figure>
 
          <h4>Steven Gerrard</h4>
@@ -429,7 +488,7 @@ layout: default
       <div class="team-member">
 
          <figure>
-            <img src="img/team04.jpg" alt="{{ site.title }}">
+            <img src="img/team04.jpg" alt="Your awesome title">
          </figure>
 
          <h4>Juan Roman Riquelme</h4>
@@ -489,3 +548,31 @@ layout: default
 
 
 
+
+
+    <footer>
+
+   <p>© Pandabox</p>
+
+</footer>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+    <script type="text/javascript"
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC5dgWONj2-xCgU--4omy8u8bQY4u2a_Rg">
+    </script>
+    <script src="js/plugins.js"></script>
+    <script src="js/app.js"></script>
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='http://www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');
+      </script>
+  </body>
+
+</html>
