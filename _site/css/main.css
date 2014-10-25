@@ -1,0 +1,930 @@
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:400,300,700");
+* {
+  box-sizing: border-box;
+}
+
+section.intro {
+  padding: 250px 0;
+  text-align: center;
+  color: white;
+  background: url("../img/016.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+section.intro:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+}
+section.intro .content {
+  position: relative;
+  z-index: 1;
+}
+section.intro .content h2 {
+  font-size: 30px;
+  text-transform: none;
+  font-weight: 400;
+  color: white;
+}
+section.intro .content h1 {
+  font-size: 68px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+section.intro .content p {
+  font-size: 20px;
+}
+section.intro .content a {
+  margin-top: 60px;
+  padding: 20px 45px;
+  background: #cfc91d;
+  text-transform: uppercase;
+  color: black;
+  font-weight: 700;
+  -webkit-transition: all 0.15s ease-out 0s;
+  transition: all 0.15s ease-out 0s;
+}
+section.intro .content a:hover {
+  background: #b9b31a;
+  color: #1a1a1a;
+}
+
+header.main-header {
+  padding: 29px 0;
+  background: #02918b;
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+  -webkit-transition: all 0.15s ease-out 0s;
+  transition: all 0.15s ease-out 0s;
+}
+header.main-header.sticky {
+  padding: 20px 0;
+}
+header.main-header .content {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  box-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+  -ms-flex-align: center;
+  -webkit-box-pack: center;
+  box-pack: center;
+  -webkit-justify-content: space-around;
+  -moz-justify-content: space-around;
+  -ms-justify-content: space-around;
+  -o-justify-content: space-around;
+  justify-content: space-around;
+  -ms-flex-pack: center;
+}
+header.main-header .content:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+header.main-header .content .logo {
+  position: relative;
+  left: -50px;
+}
+header.main-header .content .logo a {
+  text-transform: uppercase;
+  font-size: 26px;
+  font-weight: 700;
+}
+header.main-header .content .logo a span {
+  color: #cfc91d;
+}
+header.main-header .content nav.main-nav {
+  position: relative;
+  right: -100px;
+}
+header.main-header .content nav.main-nav a {
+  text-transform: uppercase;
+  margin-right: 50px;
+  -webkit-transition: all 0.15s ease-out 0s;
+  transition: all 0.15s ease-out 0s;
+}
+header.main-header .content nav.main-nav a:last-child {
+  margin-right: 0;
+}
+header.main-header .content nav.main-nav a:hover {
+  color: #cfc91d;
+}
+header.main-header .content button.menu-toggle {
+  display: none;
+}
+
+nav.mobile-nav {
+  display: none;
+}
+
+section.agency {
+  padding: 90px 0;
+  text-align: center;
+}
+section.agency h2 {
+  margin-bottom: 45px;
+}
+section.agency hr {
+  width: 15%;
+  margin: 0 auto;
+  margin-bottom: 35px;
+  color: #7e8287;
+}
+section.agency p.bio {
+  font-size: 18px;
+  color: #7e8287;
+  margin-bottom: 150px;
+}
+section.agency .skills {
+  width: 23%;
+  float: left;
+  margin: 0;
+  margin-right: 2%;
+}
+section.agency .skills:last-child {
+  margin-right: 0;
+}
+section.agency .skills figure {
+  margin-bottom: 30px;
+}
+section.agency .skills figure svg {
+  height: 120px;
+  width: 120px;
+}
+section.agency .skills figure svg path {
+  fill: #02918b;
+}
+section.agency .skills p {
+  line-height: 1.8;
+  color: #65696d;
+  font-size: 14px;
+}
+
+section.services {
+  background: url("../img/macbook-sun2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+section.services:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+section.services:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.2);
+}
+section.services .left-panel {
+  width: 50%;
+  background: #f0f0e8;
+  padding: 75px 0;
+}
+section.services .left-panel:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+section.services .left-panel .content {
+  width: 88%;
+}
+section.services .left-panel .content hr {
+  width: 33%;
+  margin-bottom: 30px;
+}
+section.services .left-panel .content p.bio {
+  color: #7e8287;
+  margin-bottom: 60px;
+}
+section.services .left-panel .content .service {
+  width: 45%;
+  float: left;
+  margin-right: 5%;
+  margin-bottom: 50px;
+}
+section.services .left-panel .content .service:last-child {
+  margin-right: 0;
+}
+section.services .left-panel .content .service figure {
+  margin-bottom: 30px;
+}
+section.services .left-panel .content .service figure svg {
+  height: 120px;
+  width: 120px;
+}
+section.services .left-panel .content .service figure svg path {
+  fill: #02918b;
+}
+section.services .left-panel .content .service h4 {
+  margin-bottom: 20px;
+}
+section.services .left-panel .content .service p {
+  line-height: 1.8;
+  color: #65696d;
+  font-size: 14px;
+}
+
+section.creations {
+  padding-top: 100px;
+  text-align: center;
+}
+section.creations hr {
+  width: 18%;
+  margin: 0 auto 30px;
+}
+section.creations p.bio {
+  font-size: 18px;
+  color: #7e8287;
+  margin: 0 auto 60px;
+  max-width: 68em;
+}
+section.creations .work {
+  width: 25%;
+  float: left;
+  margin: 0;
+}
+section.creations .work figure {
+  position: relative;
+}
+section.creations .work figure img {
+  display: block;
+}
+section.creations .work figure figcaption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 5%;
+  background: rgba(2, 145, 139, 0.8);
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  padding-top: 17%;
+  visibility: hidden;
+}
+section.creations .work figure figcaption h4 {
+  color: white;
+  font-size: 28px;
+  font-weight: 400;
+}
+section.creations .work figure figcaption a {
+  padding: 20px 35px;
+  color: white;
+  font-size: 22px;
+  border: 1px solid white;
+  border-radius: 6px;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+section.creations .work figure figcaption a:hover {
+  background: white;
+  color: #02918b;
+}
+section.creations .work figure:hover figcaption {
+  visibility: visible;
+  -webkit-transform: scale(0.9);
+      -ms-transform: scale(0.9);
+          transform: scale(0.9);
+}
+section.creations .work .project-overlay-test {
+  display: none;
+  position: fixed;
+  overflow-y: scroll;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 2;
+  background: white;
+  padding: 70px 0;
+  margin-top: 75px;
+  -webkit-transition: all 0.15s ease-out 0s;
+  transition: all 0.15s ease-out 0s;
+}
+section.creations .work .project-overlay-test .close-project {
+  border: none;
+  background: none;
+  position: absolute;
+  top: 50px;
+  right: 170px;
+  cursor: pointer;
+}
+section.creations .work .project-overlay-test .close-project svg {
+  height: 70px;
+  width: 70px;
+}
+section.creations .work .project-overlay-test .close-project svg path {
+  fill: #7e8287;
+  -webkit-transition: all 0.15s ease-out 0s;
+  transition: all 0.15s ease-out 0s;
+}
+section.creations .work .project-overlay-test .close-project:hover svg path {
+  fill: #02918b;
+}
+section.creations .work .project-overlay-test .close-project:focus {
+  outline: 0;
+}
+section.creations .work .project-overlay-test .content {
+  margin-bottom: 80px;
+}
+section.creations .work .project-overlay-test .content p {
+  font-size: 18px;
+  color: #7e8287;
+  margin-bottom: 60px;
+}
+section.creations .work .project-overlay-test .content a {
+  padding: 20px 45px;
+  font-size: 19px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 400;
+  background: #02918b;
+  margin-bottom: 40px;
+  -webkit-transition: all 0.15s ease-out 0s;
+  transition: all 0.15s ease-out 0s;
+}
+section.creations .work .project-overlay-test .content a:hover {
+  background: #028781;
+}
+section.creations .work .project-overlay-test.visible {
+  display: block;
+}
+
+section.team {
+  padding: 100px 0;
+  margin-top: 600px;
+  text-align: center;
+  background: #f0f0e8;
+}
+@media screen and (min-width: 1444px) {
+  section.team {
+    margin-top: 770px;
+  }
+}
+section.team hr {
+  width: 16%;
+  margin: 0 auto 30px;
+}
+section.team p.bio {
+  font-size: 18px;
+  color: #7e8287;
+  margin-bottom: 60px;
+}
+section.team .team-member {
+  width: 32%;
+  float: left;
+  margin-right: 1%;
+}
+section.team .team-member:last-child {
+  margin-right: 0;
+}
+section.team .team-member figure {
+  height: 200px;
+  width: 200px;
+  display: inline-block;
+  margin-bottom: 30px;
+}
+section.team .team-member figure img {
+  border-radius: 100%;
+  border: 3px solid #02918b;
+}
+section.team .team-member h4 {
+  margin-bottom: 15px;
+}
+section.team .team-member h5 {
+  margin-bottom: 25px;
+  font-size: 16px;
+  color: #4d4f52;
+}
+section.team .team-member a svg {
+  height: 60px;
+  width: 60px;
+}
+section.team .team-member a svg path {
+  -webkit-transition: all 0.15s ease-out 0s;
+  transition: all 0.15s ease-out 0s;
+}
+section.team .team-member .facebook path {
+  fill: #3b5998;
+}
+section.team .team-member .facebook path:hover {
+  fill: #4c70ba;
+}
+section.team .team-member .twitter path {
+  fill: #00aced;
+}
+section.team .team-member .twitter path:hover {
+  fill: #21c2ff;
+}
+section.team .team-member .g-plus path {
+  fill: #dd4b39;
+}
+section.team .team-member .g-plus path:hover {
+  fill: #e47365;
+}
+
+section.contact {
+  padding: 100px 0 0 0;
+  text-align: center;
+  position: relative;
+}
+section.contact .contact-top {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+}
+section.contact .contact-top:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+section.contact .contact-top hr {
+  width: 16%;
+  margin: 0 auto 30px;
+}
+section.contact .contact-top p.bio {
+  font-size: 18px;
+  color: #7e8287;
+  margin-bottom: 60px;
+}
+section.contact #map {
+  height: 500px;
+  position: relative;
+}
+section.contact .tooltip {
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  background: #03c3bb;
+  top: 390px;
+  right: 470px;
+  padding-top: 30px;
+  border-radius: 100%;
+  color: white;
+}
+section.contact .tooltip h4 {
+  margin-bottom: 10px;
+}
+section.contact .tooltip p {
+  margin-bottom: 10px;
+}
+section.contact .contact-bottom {
+  background: #0a0a0b;
+  padding: 30px 0 0 0;
+}
+section.contact .contact-bottom form {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+}
+section.contact .contact-bottom form:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+section.contact .contact-bottom form input[type='text'], section.contact .contact-bottom form textarea {
+  width: 100%;
+  padding: 25px;
+  margin-bottom: 40px;
+  border: none;
+  font-size: 18px;
+  background: #0a0a0b;
+  text-align: center;
+  color: #7e8287;
+}
+section.contact .contact-bottom form input[type='text']:focus, section.contact .contact-bottom form textarea:focus {
+  outline: 0;
+}
+section.contact .contact-bottom form textarea {
+  resize: none;
+}
+section.contact .contact-bottom form input[type='submit'] {
+  width: 16%;
+  border: none;
+  background: #cfc91d;
+  padding: 20px 45px;
+  text-transform: uppercase;
+  font-size: 18px;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+  cursor: pointer;
+  -webkit-transition: all 0.15s ease-out 0s;
+  transition: all 0.15s ease-out 0s;
+}
+section.contact .contact-bottom form input[type='submit']:hover {
+  outline: 0;
+  background: #bdb81a;
+}
+
+footer {
+  padding: 30px 0;
+  background: black;
+  color: white;
+  text-align: center;
+}
+footer p {
+  text-transform: uppercase;
+  font-size: 17px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  h2 {
+    font-size: 40px;
+  }
+
+  p.bio {
+    margin-bottom: 70px;
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  header.main-header {
+    padding: 15px 0;
+  }
+  header.main-header.sticky {
+    padding: 15px 0;
+  }
+  header.main-header .content {
+    width: 96%;
+  }
+  header.main-header .content .logo {
+    left: -10px;
+  }
+  header.main-header .content nav.main-nav {
+    display: none;
+  }
+  header.main-header .content button.menu-toggle {
+    display: block;
+    position: relative;
+    right: -65px;
+    cursor: pointer;
+    border: none;
+    background: none;
+  }
+  header.main-header .content button.menu-toggle:focus {
+    outline: 0;
+  }
+  header.main-header .content button.menu-toggle svg {
+    height: 35px;
+    width: 35px;
+  }
+  header.main-header .content button.menu-toggle svg path {
+    fill: white;
+    -webkit-transition: all 0.15s ease-out 0s;
+    transition: all 0.15s ease-out 0s;
+  }
+  header.main-header .content button.menu-toggle:hover svg path {
+    fill: #989ca0;
+  }
+
+  nav.mobile-nav {
+    display: block;
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(2, 145, 139, 0.96);
+    z-index: 2;
+    padding: 100px 0;
+    text-align: center;
+    color: white;
+    -webkit-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+  }
+  nav.mobile-nav a {
+    display: block;
+    font-size: 21px;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 25px;
+    -webkit-transition: all 0.15s ease-out 0s;
+    transition: all 0.15s ease-out 0s;
+  }
+  nav.mobile-nav a:hover {
+    color: #cfc91d;
+  }
+  nav.mobile-nav.visible {
+    top: 0;
+  }
+
+  section.intro {
+    padding: 170px 0;
+  }
+  section.intro .content {
+    width: 96%;
+  }
+  section.intro .content h2 {
+    font-size: 26px;
+    margin-bottom: 15px;
+  }
+  section.intro .content h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+  }
+
+  section.agency {
+    padding: 45px 0;
+  }
+  section.agency .content {
+    width: 96%;
+  }
+  section.agency .content p.bio {
+    margin-bottom: 60px;
+  }
+  section.agency .skills {
+    width: 100%;
+    float: none;
+    margin-bottom: 45px;
+  }
+
+  section.services .left-panel {
+    width: 100%;
+    padding: 40px 0;
+    text-align: center;
+  }
+  section.services .left-panel .content {
+    width: 94%;
+  }
+  section.services .left-panel .content hr {
+    margin: 0 auto 20px;
+  }
+  section.services .left-panel .content .service {
+    width: 100%;
+    float: none;
+    margin-bottom: 45px;
+  }
+
+  section.creations {
+    padding: 40px 0;
+  }
+  section.creations h2 {
+    font-size: 40px;
+  }
+  section.creations p.bio {
+    width: 92%;
+    margin: 0 auto 45px;
+  }
+  section.creations .work {
+    width: 100%;
+    float: none;
+    margin: 0;
+  }
+  section.creations .work .project-overlay-test {
+    margin-top: 70px;
+  }
+  section.creations .work .project-overlay-test .close-project {
+    top: 10px;
+    right: 30px;
+  }
+  section.creations .work .project-overlay-test .close-project svg {
+    height: 55px;
+    width: 55px;
+  }
+  section.creations .work .project-overlay-test .content {
+    margin-bottom: 100px;
+    width: 96%;
+  }
+  section.creations .work .project-overlay-test .content h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+  section.creations .work .project-overlay-test .content p {
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 50px;
+  }
+
+  section.team {
+    padding: 40px 0;
+    margin-top: -45px;
+  }
+  section.team p.bio {
+    width: 96%;
+    margin: 0 auto;
+    margin-bottom: 60px;
+  }
+  section.team .team-member {
+    width: 100%;
+    float: none;
+    margin-bottom: 45px;
+  }
+  section.team .team-member figure {
+    height: 150px;
+    width: 150px;
+  }
+
+  section.contact {
+    padding: 60px 0 0 0;
+  }
+  section.contact p.bio {
+    width: 96%;
+    margin: 0 auto 60px;
+  }
+  section.contact #map {
+    display: none;
+  }
+  section.contact .tooltip {
+    display: none;
+  }
+  section.contact .contact-bottom form input[type='submit'] {
+    width: 44%;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 767px) and (max-width: 992px) {
+  header.main-header {
+    padding: 20px 0;
+  }
+  header.main-header .content {
+    width: 96%;
+  }
+  header.main-header .content .logo {
+    left: -20px;
+  }
+  header.main-header .content nav.main-nav {
+    right: -70px;
+  }
+  header.main-header .content nav.main-nav a {
+    font-size: 14px;
+    margin-right: 20px;
+  }
+
+  section.intro {
+    padding: 200px 0;
+  }
+  section.intro .content {
+    width: 94%;
+  }
+  section.intro .content h1 {
+    font-size: 52px;
+  }
+  section.intro .content p {
+    margin-top: 20px;
+  }
+
+  section.agency {
+    padding: 55px 0;
+  }
+  section.agency .content {
+    width: 96%;
+  }
+  section.agency .content p.bio {
+    margin-bottom: 100px;
+  }
+  section.agency .skills {
+    width: 48%;
+    float: left;
+    margin-right: 1.5%;
+    margin-bottom: 45px;
+  }
+  section.agency .skills:last-child {
+    margin-right: 0;
+  }
+
+  section.services .left-panel {
+    width: 100%;
+    padding: 50px 0;
+    text-align: center;
+  }
+  section.services .left-panel .content {
+    width: 96%;
+  }
+  section.services .left-panel .content hr {
+    margin: 0 auto 30px;
+  }
+
+  section.creations {
+    padding: 55px 0;
+  }
+  section.creations p.bio {
+    width: 96%;
+    margin-bottom: 45px;
+  }
+  section.creations .work {
+    width: 50%;
+    float: left;
+    margin: 0;
+  }
+  section.creations .work .project-overlay-test .close-project {
+    top: 30px;
+    right: 60px;
+  }
+  section.creations .work .project-overlay-test .close-project svg {
+    height: 55px;
+    width: 55px;
+  }
+  section.creations .work .project-overlay-test .content {
+    margin-bottom: 70px;
+    width: 96%;
+  }
+
+  section.team {
+    padding: 50px 0;
+    margin-top: 1090px;
+  }
+  section.team p.bio {
+    width: 96%;
+    margin: 0 auto;
+    margin-bottom: 60px;
+  }
+  section.team .team-member figure {
+    height: 160px;
+    width: 160px;
+  }
+
+  section.contact {
+    padding: 60px 0 0 0;
+  }
+  section.contact p.bio {
+    width: 96%;
+    margin: 0 auto 60px;
+  }
+  section.contact .contact-bottom form input[type='submit'] {
+    width: 28%;
+    text-align: center;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-smoothing: antialiased;
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  display: inline-block;
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+h2 {
+  font-size: 46px;
+  font-weight: 700;
+  color: #02918b;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+h4 {
+  font-size: 16px;
+  color: #7e8287;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+p {
+  line-height: 2.3;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  display: inline-block;
+}
+
+.content {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+}
+.content:after {
+  content: "";
+  display: table;
+  clear: both;
+}
